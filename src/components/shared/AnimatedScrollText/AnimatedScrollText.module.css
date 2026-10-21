@@ -1,0 +1,7 @@
+.word {
+    display: inline-block;
+}
+
+.letter {
+    opacity: 0.2;
+}

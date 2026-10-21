@@ -1,0 +1,91 @@
+.painPointsSection {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
+.painPointsContainer {
+    min-height: var(--section-min-height);
+    display: flex;
+    flex-direction: column;
+    max-width: var(--page-max-width);
+    padding-inline: var(--page-gutter);
+    margin: 0 auto;
+}
+
+.header {
+    text-transform: uppercase;
+}
+
+
+.topCenter h2 {
+    font-weight: 700;
+    text-transform: none;
+}
+
+.topRight {
+    text-align: right;
+}
+
+.mainContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.textGrid {
+    max-width: var(--content-max-width);
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.textColumn h4 {
+    font-weight: 700;
+}
+
+.textColumn ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.textColumn li p {
+    font-size: .875rem;
+}
+
+.imageWrapper {
+    width: 100%;
+    aspect-ratio: 21 / 7;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+@media (max-width: 47.9988em) {
+    .mainContent {
+        margin-top: 3rem;
+    }
+
+    .textGrid {
+        grid-template-columns: 1fr;
+    }
+    .textColumn {
+        text-align: center;
+    }
+}

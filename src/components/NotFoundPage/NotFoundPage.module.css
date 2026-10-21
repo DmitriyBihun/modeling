@@ -1,0 +1,50 @@
+.page {
+    min-height: var(--section-min-height);
+    padding-inline: var(--page-gutter);
+    display: grid;
+    place-items: center;
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
+.container {
+    width: min(100%, 42rem);
+    text-align: center;
+}
+
+.code {
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-family: "Syne", sans-serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.description {
+    max-width: 30rem;
+    margin: 0 auto 2rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.link {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: var(--color-text-secondary);
+}
+
+.link:focus-visible {
+    outline: 2px solid var(--color-text-primary);
+    outline-offset: 4px;
+}

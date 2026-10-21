@@ -1,0 +1,25 @@
+﻿.logo {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    border: 1.2px solid var(--color-surface);
+
+    color: var(--color-text-inverse);
+    padding: .25rem;
+    background-color: var(--color-surface-inverse);
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1.2px solid var(--color-surface-inverse);
+}

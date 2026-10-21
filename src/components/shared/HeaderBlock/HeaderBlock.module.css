@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.header.withCenter {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: start;
+}
+.header.withCenter .center {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.header.withCenter .right {
+    justify-self: end;
+}
+
+@media (max-width: 47.9988em) {
+    .header.withCenter {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "left  right"
+            "center center";
+    }
+
+    .header.withCenter .left {
+        grid-area: left;
+    }
+
+    .header.withCenter .right {
+        grid-area: right;
+        justify-self: end;
+    }
+
+    .header.withCenter .center {
+        grid-area: center;
+        text-align: center;
+        justify-self: center;
+    }
+}

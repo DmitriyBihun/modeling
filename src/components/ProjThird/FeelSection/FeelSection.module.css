@@ -1,0 +1,30 @@
+.feelSection {
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+}
+
+.feelContainer {
+    max-width: var(--page-max-width);
+    padding-inline: var(--page-gutter);
+    margin: 0 auto;
+
+    min-height: var(--section-min-height);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.conceptContent {
+    max-width: var(--content-max-width);
+    align-self: center;
+}
+
+.conceptContent p {
+    line-height: 1.4;
+    font-size: clamp(14px, 3vw, 29px);
+    font-weight: 300;
+    text-align: justify;
+}
